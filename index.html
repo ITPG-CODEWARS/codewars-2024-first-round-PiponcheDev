@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    
+    <!--meta data-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--tab view-->
+    <title>Железопътна страст</title>
+    <link rel="icon" href="assets/images/logo.png">
+
+    <!--css files-->
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="components/topbar/topbar.css">
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+
+</head>
+<script src="components/topbar/topbar.js" defer></script>
+<body>    
+    <!--the top bar-->
+    <div class="top-bar">
+        
+        <div class="branding">
+            <a href="index.html"><img id="logo" src="assets/images/logo.png" alt="Лого на влак"></a>
+            <h2 id="title">Железопътна страст</h2>
+        </div>
+        
+        <div class="nav-bar">
+            <a class="nav-button" href="index.html">Начало</a>
+            <div class="train-dropdown">
+                <button onclick="myFunction()" class="dropdown-button">Влакове</button>
+                <div id="trains" class="train-elements">
+                    <a id="first-element" href="#">Link 1</a>
+                    
+                    <a href="#">Link 2</a>
+
+                    <a id="last-element" href="#">Link 3</a>
+                </div>
+            </div> 
+            <a class="nav-button" href="#contacts">Контакти</a>
+            <a class="nav-button" href="#aboutme">Повече за мен</a>
+        </div>
+
+    </div>   
+
+</body>
+</html>

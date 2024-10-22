@@ -1,0 +1,17 @@
+/*fonts*/
+@font-face {
+    font-family: jost;
+    src: url(../fonts/Jost-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #FFD1BA ;
+    color: #424242;
+    margin: 0;
+    font-family:  jost;
+}
+
+
