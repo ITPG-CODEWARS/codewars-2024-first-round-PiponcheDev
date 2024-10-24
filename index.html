@@ -8,11 +8,11 @@
 
     <!--tab view-->
     <title>Железопътна страст</title>
-    <link rel="icon" href="assets/images/logo.png">
+    <link rel="icon" href="assets/images/favicon.png">
 
     <!--css files-->
     <link rel="stylesheet" href="assets/css/index.css">
-    <link rel="stylesheet" href="components/topbar/topbar.css">
+    <link rel="stylesheet" href="topbar/topbar.css">
 
     <!--google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,30 +20,76 @@
     <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
 
 </head>
-<script src="components/topbar/topbar.js" defer></script>
+<script src="topbar/topbar.js" defer></script>
 <body>    
     <!--the top bar-->
     <div class="top-bar">
+        <div class="mobile-phone-branding">
+
+            <a href="index.html"><img id="logo" src="assets/images/logo.png" alt="Лого на влак"></a>
+
+        </div>
+        <div class="menu-toggle">
+
+            <button class="menu-button" onclick="Menu()"><img src="assets/images/menu.png"></button>
+            <div class="mobile-phone-nav-bar" id="phone-nav-bar">
+
+                <a class="nav-button" href="index.html">Начало</a>
+
+                <a class="nav-button" id="mobile-phone-train-button" href="#trains">Влакове</a>
+                
+                <div class="tablet-train-dropdown">
+                    
+                    <button onclick="MobileTrainDropdown()" class="dropdown-button">Влакове</button>
+                    
+                    <div id="tablet-trains" class="tablet-train-elements">
+                    
+                        <a href="#">Link 1</a>
+                        
+                        <a href="#">Link 2</a>
+    
+                        <a href="#">Link 3</a>
+                    
+                    </div>
+
+                </div> 
+                
+                <a class="nav-button" href="#contacts">Контакти</a>
+                <a class="nav-button" href="#aboutme">Повече за мен</a>
+            
+            </div>
+
+        </div>
         
         <div class="branding">
+
             <a href="index.html"><img id="logo" src="assets/images/logo.png" alt="Лого на влак"></a>
-            <h2 id="title">Железопътна страст</h2>
+
         </div>
         
         <div class="nav-bar">
+
             <a class="nav-button" href="index.html">Начало</a>
+            
             <div class="train-dropdown">
-                <button onclick="myFunction()" class="dropdown-button">Влакове</button>
+                
+                <button onclick="TrainDropdown()" class="dropdown-button">Влакове</button>
+                
                 <div id="trains" class="train-elements">
+                
                     <a id="first-element" href="#">Link 1</a>
                     
                     <a href="#">Link 2</a>
 
                     <a id="last-element" href="#">Link 3</a>
+                
                 </div>
+
             </div> 
+            
             <a class="nav-button" href="#contacts">Контакти</a>
             <a class="nav-button" href="#aboutme">Повече за мен</a>
+        
         </div>
 
     </div>   

@@ -1,0 +1,268 @@
+/*setting text color*/
+*{
+    color: #424242;
+}
+
+/*top-bar properties*/
+.top-bar, .branding, .nav-bar {
+    display: flex;
+    align-items: center;
+    height: 120px;
+    background-color: #A7C4FF;
+}
+
+/*menu toggle properties*/
+.menu-button{
+    display: none;
+}
+
+.menu-button img{
+    width: 100px;
+    padding :20px;
+}
+
+.mobile-phone-nav-bar{
+    display: none;
+}
+
+/*branding properties*/
+.branding img{
+    width: 120%;
+    margin-left: 20px;
+
+}
+
+.mobile-phone-branding{
+    display: none;
+}
+
+/*navigation bar properties*/
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 15%;
+    width: 80%;
+}
+
+/*buttons*/
+.nav-button, .dropdown-button{
+    width: 100%;
+    padding: 25px;
+    margin-right: 5px;
+    font-family: Unbounded;   
+    font-size: large; 
+    text-align: center;
+    text-decoration: none;
+    background-color: #A7C4FF;
+    color: #424242;
+    border: none;
+    border-radius: 40px;
+    transition: 0.4s ease-in-out;
+}
+
+.nav-button:hover, .dropdown-button:hover{
+    background-color: #8FA9FF;
+}
+
+/*train-dropdown and all its children properties*/
+.train-dropdown{
+    position: relative;
+    margin-right: 5px;
+    width: 100%;
+    padding: 0;
+}
+
+.train-elements{
+    display: none;
+    width: 400px;
+    height: auto;
+    margin-top: 10px;
+    position: absolute;
+    left: 50%;
+    top:120%;
+    transform: translatey(-120%);
+    transform: translateX(-50%);
+    background-color: #7f9dfd;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.train-elements a{
+    padding: 12px 16px;
+    color: black;
+    text-decoration: none;
+}
+
+.train-elements a:hover{
+    background-color: #567dff;
+}
+
+.train-elements #first-element:hover{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.train-elements #last-element:hover{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#mobile-phone-train-button{
+    display: none;
+}
+
+/*Class that JS uses to show train-elements*/
+.show {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 1100px){
+    /*hiding nav-bar to save space and make it into a dropdown*/
+    .nav-bar{
+        display: none;
+    }
+
+    /*a menu button that makes the nav-bar appear*/
+    .menu-button{
+        display: inline-block;
+        margin: 10px;
+        border-radius: 20px;
+        border: none;
+        position: relative; 
+        background-color: #A7C4FF;
+        
+    }
+
+    .menu-button:hover{
+        background-color: #8FA9FF;
+    }
+
+    /*branding properties*/
+    .branding img{
+        height: 130px;
+        width: auto;
+        margin-left: 5px;
+    }
+    
+    /*button properties*/
+    .nav-button, .dropdown-button{
+        border-radius: 0;
+        background-color: #94b7ff;
+    }
+    
+    /*train dropdown properties*/
+    .tablet-train-elements{
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        position: absolute;
+        top: 72.5px;
+        left:215px;
+        background-color: #7f9dfd;
+    }
+    
+    .tablet-train-elements a{
+        padding: 12px 16px;
+        color: black;
+        text-decoration: none;
+    }
+
+    .tablet-train-elements a:hover{
+        background-color: #567dff;
+    }
+    
+    /*hides the button i will be using for phone mode that
+    substitutes the dropdown button cause there is no space*/
+    #mobile-phone-train-button{
+        display: none;
+    }
+
+    /*a class JS uses to display the dropdown when pressing the button*/
+    .show-nav-bar{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 120px;
+        box-shadow: 8px 16px 16px 0px rgba(0,0,0,0.2);
+        background-color: #A7C4FF;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    /*hiding nav-bar to save space and make it into a dropdown*/
+    .nav-bar{
+        display: none;
+    }
+
+    /*setting the logo and menu button be in a column
+    because of the lacking width space on phones*/
+    .top-bar{
+        flex-direction: column;
+    }
+
+    /*hiding the branding cause i want the branding be on top
+    and had to create a new one behind the menu button*/
+    .branding{
+        display: none;
+    }
+
+    /*logo and title of website*/
+    .mobile-phone-branding{
+        width: 100%;
+        border-bottom: solid 2px #97baff;
+        display: flex;
+        justify-content: center;
+        background-color: #A7C4FF;
+    }
+
+    /*a menu button that makes the nav-bar appear*/
+    .menu-toggle{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: #A7C4FF;
+
+
+    }
+    .menu-button{
+        width: 100%;
+        border: none;
+        border-radius: 20px;
+        background-color: #A7C4FF;
+    }
+
+    .menu-button:hover{
+        background-color: #8FA9FF;
+    }
+
+    /*button properties*/
+    .nav-button{
+        border-radius: 0;
+        background-color: #94b7ff;
+    }
+
+    /*hiding the dropdown button we used in desktop
+    and tablet mode and changing with a simple <a>
+    link that goes to the page with all the trains*/
+    .train-elements, .tablet-train-dropdown{
+        display: none;
+    }
+
+    #mobile-phone-train-button{
+        display: block
+    }
+
+    /*a class JS uses to display the dropdown when pressing the button*/
+    .show-nav-bar{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 255px;
+        width: 100%;
+        background-color: #94b7ff;
+    }
+
+}
+
