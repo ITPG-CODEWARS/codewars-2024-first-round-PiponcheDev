@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--tab view-->
+    <title>Железопътна страст</title>
+    <link rel="icon" href="../assets/images/favicon.png">
+
+    <!--css files-->
+    <link rel="stylesheet" href="../assets/css/about-me.css">
+    <link rel="stylesheet" href="../topbar/topbar.css">
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+
+</head>
+<script src="../topbar/topbar.js" defer></script>
+<body>    
+    <!--the top bar-->
+<div class="top-bar">
+    <div class="mobile-phone-branding">
+
+        <a href="index.html"><img id="logo" src="../assets/images/logo.png" alt="Лого на влак"></a>
+
+    </div>
+    <div class="menu-toggle">
+
+        <button class="menu-button" onclick="Menu()"><img src="../assets/images/menu.png"></button>
+        
+        <div class="mobile-phone-nav-bar" id="phone-nav-bar">
+
+            <a class="nav-button" href="../index.html">Начало</a>
+
+            <a class="nav-button" id="mobile-phone-train-button" href="#trains">Влакове</a>
+            
+            <div class="tablet-train-dropdown">
+                
+                <button onclick="MobileTrainDropdown()" class="dropdown-button">Влакове</button>
+                
+                <div id="tablet-trains" class="tablet-train-elements">
+                
+                    <a href="#">Link 1</a>
+                    
+                    <a href="#">Link 2</a>
+
+                    <a href="#">Link 3</a>
+                
+                </div>
+
+            </div> 
+            
+            <a class="nav-button" href="#contacts">Контакти</a>
+            <a class="nav-button" href="#aboutme">Повече за мен</a>
+        
+        </div>
+
+    </div>
+    
+    <div class="branding">
+
+        <a href="index.html"><img id="logo" src="../assets/images/logo.png" alt="Лого на влак"></a>
+
+    </div>
+    
+    <div class="nav-bar">
+
+        <a class="nav-button" href="../index.html">Начало</a>
+        
+        <div class="train-dropdown">
+            
+            <button onclick="TrainDropdown()" class="dropdown-button">Влакове</button>
+            
+            <div id="trains" class="train-elements">
+            
+                <a id="first-element" href="#">Link 1</a>
+                
+                <a href="#">Link 2</a>
+
+                <a id="last-element" href="#">Link 3</a>
+            
+            </div>
+
+        </div> 
+        
+        <a class="nav-button" href="#contacts">Контакти</a>
+        <a class="nav-button" href="#aboutme">Повече за мен</a>
+    
+    </div>
+</div>   
+
+<div class="section-container">
+    
+    <div class="image-container">
+        <img alt="picture of me" src="../assets/images/about-me.png">
+        <h3>Снимка от участието ми в състезанието "Джон Атанасов"</h3>
+    </div>
+
+    <div class="text">
+        <h1>Повече за мен</h1>
+        <p>
+            Здравейте, казвам се Габриел Неделчев и съм на 14 години. Живея във Варна 
+            – град с богата история и динамична култура.
+            Имам силен интерес към информационните технологии и програмирането.
+            Започнах да се запознавам с различни програмни езици на възраст около 10 години
+            и оттогава се стремя да развивам своите умения в тази област. Разполагам с основни познания в езиците 
+            C++, C#, Python, Lua, HTML, CSS и JavaScript, което ми позволява да създавам разнообразни проекти,
+            вариращи от уебсайтове до приложения и игри. Моите проекти отразяват моята страст към технологиите и моето желание за иновации.
+            Постоянно се опитвам да уча нови техники и да разширявам познанията си, тъй като вярвам, че програмирането е не само инструмент за решаване на проблеми,
+            но и платформа за творчество и изразяване.
+            В свободното си време обичам да чета литература, 
+            да играя видеоигри и да прекарвам време с приятели.
+            Ако имате въпроси или искате да научите повече за моите проекти, моля, не се колебайте да се свържете с мен.
+        </p>
+        <div class="button-container"><a href="#" class="contact-button">Контакти</a></div>
+    </div>
+
+</div>
+
+</body>
+</html>

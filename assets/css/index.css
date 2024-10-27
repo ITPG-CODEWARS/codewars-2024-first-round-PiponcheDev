@@ -26,7 +26,7 @@ body {
 
 .main-section{
     width: 35vw;
-    margin: 0 7vw;
+    margin: 0 4vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -51,7 +51,7 @@ body {
 }
 .train-images-container{
     display: flex;
-    width: 60vw;
+    width: 55vw;
     height: 80vh;
     flex-direction: column;
     gap: 2vh;

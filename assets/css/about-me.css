@@ -1,0 +1,103 @@
+/*Fonts*/
+@font-face {
+    font-family: jost;
+    src: url(../fonts/Jost-Regular.ttf);
+}
+
+/*General properties*/
+* {
+    box-sizing: border-box;
+    color: #424242;
+    font-family:  jost;
+}
+
+body {
+    margin: 0;
+    background-color: #FFD1BA;
+}
+
+.section-container{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image-container{
+    width: 30vw;
+    max-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container > img{
+    width: 100%;
+    height: 75vh;
+}
+
+.image-container h3{
+    text-align: center;
+}
+
+.text{
+    width: 35vw;
+    max-height: 85vh;
+    font-family: Unbounded;
+    text-align: center;
+}
+
+.text p{
+    font-size: 1.5em;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.contact-button {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    height: 7vh;
+    font-family: Unbounded;
+    font-size: 1.6em;
+    padding: 20px;
+    border-radius: 40px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.135);
+}
+
+.contact-button:hover{
+    background-color: #ffc490d0;
+}
+
+@media only screen and (max-width: 1300px){
+    .section-container{
+        flex-direction: column;
+        margin-top: 30px;
+        gap: 50px;
+    }
+    .image-container{
+        width: 65vw;
+    }
+    .text{
+        width: 90vw;
+    }
+    .contact-button{
+        margin-bottom: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 700px){
+    .section-container{
+        margin-top: 85px;
+        gap: 60px;
+    }
+}
