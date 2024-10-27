@@ -1,39 +1,42 @@
-function TrainDropdown() {
-    document.getElementById("trains").classList.toggle("show");
-  }
-  
-  // Close the dropdown menu if the user clicks outside of it
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropdown-button')) {
-      var dropdowns = document.getElementsByClassName("train-elements");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
-    }
-  } 
+function TrainDropdown() { 
+  const trainMenu = document.getElementById("trains");
+  trainMenu.classList.toggle("show");
+  console.log("TrainDropdown toggled:", trainMenu.classList.contains("show"));
+}
 
   function Menu() {
     const navBar = document.getElementById("phone-nav-bar");
     navBar.classList.toggle("show-nav-bar");
 }
-window.onclick = function (event) {
-  const menuButton = document.querySelector('.menu-button');
-  const navBar = document.getElementById("phone-nav-bar");
-
-  if (!menuButton.contains(event.target) && !navBar.contains(event.target)) {
-      navBar.classList.remove("show-nav-bar");
-  }
-}
-
 function MobileTrainDropdown() {
   const trainElements = document.getElementById("tablet-trains");
-  if (trainElements.style.display === "none") {
+  if (!trainElements.style.display || trainElements.style.display === "none") {
       trainElements.style.display = "flex";
   } else {
       trainElements.style.display = "none";
   }
 }
+
+window.addEventListener("click", function (event) {
+  console.log("Window click detected on:", event.target);
+
+  // Close train dropdown if clicked outside the dropdown button
+  if (!event.target.closest('.dropdown-button')) {
+    const dropdowns = document.getElementsByClassName("train-elements");
+    for (let i = 0; i < dropdowns.length; i++) {
+      const openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+        console.log("Closed train dropdown:", openDropdown);
+      }
+    }
+  }
+
+  // Close mobile nav menu if clicked outside menu button and nav bar
+  const navBar = document.getElementById("phone-nav-bar");
+  const menuButton = document.querySelector('.menu-button');
+  if (navBar && menuButton && !menuButton.contains(event.target) && !navBar.contains(event.target)) {
+    navBar.classList.remove("show-nav-bar");
+    console.log("Closed mobile nav menu.");
+  }
+});

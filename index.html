@@ -23,65 +23,33 @@
 <script src="topbar/topbar.js" defer></script>
 <body>    
     <!--the top bar-->
-    <div class="top-bar">
-        <div class="mobile-phone-branding">
+<div class="top-bar">
+    <div class="mobile-phone-branding">
 
-            <a href="index.html"><img id="logo" src="assets/images/logo.png" alt="Лого на влак"></a>
+        <a href="index.html"><img id="logo" src="assets/images/logo.png" alt="Лого на влак"></a>
 
-        </div>
-        <div class="menu-toggle">
+    </div>
+    <div class="menu-toggle">
 
-            <button class="menu-button" onclick="Menu()"><img src="assets/images/menu.png"></button>
-            <div class="mobile-phone-nav-bar" id="phone-nav-bar">
-
-                <a class="nav-button" href="index.html">Начало</a>
-
-                <a class="nav-button" id="mobile-phone-train-button" href="#trains">Влакове</a>
-                
-                <div class="tablet-train-dropdown">
-                    
-                    <button onclick="MobileTrainDropdown()" class="dropdown-button">Влакове</button>
-                    
-                    <div id="tablet-trains" class="tablet-train-elements">
-                    
-                        <a href="#">Link 1</a>
-                        
-                        <a href="#">Link 2</a>
-    
-                        <a href="#">Link 3</a>
-                    
-                    </div>
-
-                </div> 
-                
-                <a class="nav-button" href="#contacts">Контакти</a>
-                <a class="nav-button" href="#aboutme">Повече за мен</a>
-            
-            </div>
-
-        </div>
+        <button class="menu-button" onclick="Menu()"><img src="assets/images/menu.png"></button>
         
-        <div class="branding">
-
-            <a href="index.html"><img id="logo" src="assets/images/logo.png" alt="Лого на влак"></a>
-
-        </div>
-        
-        <div class="nav-bar">
+        <div class="mobile-phone-nav-bar" id="phone-nav-bar">
 
             <a class="nav-button" href="index.html">Начало</a>
+
+            <a class="nav-button" id="mobile-phone-train-button" href="#trains">Влакове</a>
             
-            <div class="train-dropdown">
+            <div class="tablet-train-dropdown">
                 
-                <button onclick="TrainDropdown()" class="dropdown-button">Влакове</button>
+                <button onclick="MobileTrainDropdown()" class="dropdown-button">Влакове</button>
                 
-                <div id="trains" class="train-elements">
+                <div id="tablet-trains" class="tablet-train-elements">
                 
-                    <a id="first-element" href="#">Link 1</a>
+                    <a href="#">Link 1</a>
                     
                     <a href="#">Link 2</a>
 
-                    <a id="last-element" href="#">Link 3</a>
+                    <a href="#">Link 3</a>
                 
                 </div>
 
@@ -92,7 +60,148 @@
         
         </div>
 
-    </div>   
+    </div>
+    
+    <div class="branding">
 
+        <a href="index.html"><img id="logo" src="assets/images/logo.png" alt="Лого на влак"></a>
+
+    </div>
+    
+    <div class="nav-bar">
+
+        <a class="nav-button" href="index.html">Начало</a>
+        
+        <div class="train-dropdown">
+            
+            <button onclick="TrainDropdown()" class="dropdown-button">Влакове</button>
+            
+            <div id="trains" class="train-elements">
+            
+                <a id="first-element" href="#">Link 1</a>
+                
+                <a href="#">Link 2</a>
+
+                <a id="last-element" href="#">Link 3</a>
+            
+            </div>
+
+        </div> 
+        
+        <a class="nav-button" href="#contacts">Контакти</a>
+        <a class="nav-button" href="#aboutme">Повече за мен</a>
+    
+    </div>
+
+</div>   
+
+    <!--section container-->
+<div class="section-container">
+
+    <div class="main-section">
+
+        <img src="assets/images/home-page.png" alt="Рисунка на влак">
+
+        <div class="text">
+
+            <h2 id="motto">Пътувай по релсите на страстта!</h2>
+            <p id="about-website">
+                Добре дошли на нашия сайт, посветен на магията на влаковете! 
+                Тук ще намерите всичко, което може да ви вдъхнови да се 
+                потопите в света на железниците. Пътувайте и открийте 
+                несравнимото вълнение от всяко пътуване!
+            </p>
+        
+        </div>
+    
+    </div>
+
+    <div class="train-images-container">
+
+        <div id="first-row">
+
+            <div class="train-card">
+
+                <div class="image-overlay">
+
+                    <img id="N700S" alt="N700S" src="assets/images/N700S.jpg">
+
+                    <div class="brief-overview">
+                        <p>
+                            Влакът N700S осигурява висока скорост и комфорт 
+                            с модерна конструкция и иновации в безопасността, 
+                            свързвайки основните японски градове бързо и удобно.
+                        </p>
+                    </div>
+                
+                </div>
+
+                <div class="caption">
+
+                    <a href="#" class="train-button">N700S</a>
+                    <p>супербърз, удобен и изключително тих</p>
+                
+                </div>
+
+            </div>
+            <div class="train-card">
+                
+                <div class="image-overlay">
+
+                    <img id="CR400AF" alt="CR400AF" src="assets/images/CR400AF.jpg">
+                
+                    <div class="brief-overview">
+                        <p>
+                            Влакът CR400AF предлага ултра бързо и тихо пътуване,
+                            свързвайки китайските метрополиси с модерни технологии
+                            за комфорт и удобство на пътниците.
+                        </p>
+                    </div>
+
+                </div>    
+
+                <div class="caption">
+
+                    <a href="#" class="train-button">CR400AF</a>
+                    <p>ултрабърз, модерен и изключително тих</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="second-row">
+
+            <div class="train-card">
+            
+                <div class="image-overlay">
+
+                    <img id="TGV-M" alt="TGV-M" src="assets/images/TGV-M.jpg">
+
+                    <div class="brief-overview">
+                        <p>
+                            Влакът TGV-M съчетава висока скорост, 
+                            модерен дизайн и устойчивост, предлагащ 
+                            комфортно пътуване между френски и европейски
+                            градове с акцент на енергийна ефективност.
+                        </p>
+                    </div>
+
+                </div>    
+
+                <div class="caption">
+
+                    <a href="#" class="train-button">TGV-M</a>
+                    <p>бърз, комфортен и енергийно ефективен</p>
+
+                </div>
+
+            </div>
+       
+        </div>
+
+    </div>
+</div>
 </body>
 </html>
