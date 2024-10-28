@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--tab view-->
+    <title>Влакове</title>
+    <link rel="icon" href="../assets/images/favicon.png">
+
+    <!--css files-->
+    <link rel="stylesheet" href="../assets/css/trains.css">
+    <link rel="stylesheet" href="../topbar/topbar.css">
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+
+</head>
+<script src="../topbar/topbar.js" defer></script>
+<body>    
+    <!--the top bar-->
+<div class="top-bar">
+    <div class="mobile-phone-branding">
+
+        <a href="index.html"><img id="logo" src="../assets/images/logo.png" alt="Лого на влак"></a>
+
+    </div>
+    <div class="menu-toggle">
+
+        <button class="menu-button" onclick="Menu()"><img src="../assets/images/menu.png"></button>
+        
+        <div class="mobile-phone-nav-bar" id="phone-nav-bar">
+
+            <a class="nav-button" href="../index.html">Начало</a>
+
+            <a class="nav-button" id="mobile-phone-train-button" href="#trains">Влакове</a>
+            
+            <div class="tablet-train-dropdown">
+                
+                <button onclick="MobileTrainDropdown()" class="dropdown-button">Влакове</button>
+                
+                <div id="tablet-trains" class="tablet-train-elements">
+                
+                    <a href="pages/trains.html">Всички влакове</a>
+
+                    <a href="#">N700S</a>
+
+                    <a href="#">CR400AF</a>
+                    
+                    <a href="#">TGV-M</a>
+
+                    <a href="#">Talgo Avril</a>
+                
+                </div>
+
+            </div> 
+            
+            <a class="nav-button" href="contacts.html">Контакти</a>
+            <a class="nav-button" href="about-me.html">Повече за мен</a>
+        
+        </div>
+
+    </div>
+    
+    <div class="branding">
+
+        <a href="index.html"><img id="logo" src="../assets/images/logo.png" alt="Лого на влак"></a>
+
+    </div>
+    
+    <div class="nav-bar">
+
+        <a class="nav-button" href="../index.html">Начало</a>
+        
+        <div class="train-dropdown">
+            
+            <button onclick="TrainDropdown()" class="dropdown-button">Влакове</button>
+            
+            <div id="trains" class="train-elements">
+            
+                <a id="first-element" href="pages/trains.html">Всички влакове</a>
+                
+                <a href="#">N700S</a>
+                
+                <a href="#">CR400AF</a>
+                
+                <a href="#">TGV-M</a>
+
+                <a id="last-element" href="#">Talgo Avril</a>
+            
+            </div>
+
+        </div> 
+        
+        <a class="nav-button" href="contacts.html">Контакти</a>
+        <a class="nav-button" href="about-me.html">Повече за мен</a>
+    
+    </div>
+
+</div>
+
+<div class="train-images-container">
+
+    <div id="first-row">
+
+        <div class="train-card">
+
+            <div class="image-overlay">
+
+                <img id="N700S" alt="N700S" src="../assets/images/N700S.jpg">
+
+                <div class="brief-overview">
+                    
+                    <p>
+                        Влакът N700S осигурява висока скорост и комфорт 
+                        с модерна конструкция и иновации в безопасността, 
+                        свързвайки основните японски градове бързо и удобно.
+                    </p>
+
+                </div>
+            
+            </div>
+
+            <div class="caption">
+
+                <a href="#" class="train-button">N700S</a>
+                <p>сигурен, бърз, комфортен</p>
+            
+            </div>
+
+        </div>
+
+        <div class="train-card">
+            
+            <div class="image-overlay">
+
+                <img id="CR400AF" alt="CR400AF" src="../assets/images/CR400AF.jpg">
+            
+                <div class="brief-overview">
+                    
+                    <p>
+                        Влакът CR400AF предлага ултра бързо и тихо пътуване,
+                        свързвайки китайските метрополиси с модерни технологии
+                        за комфорт и удобство на пътниците.
+                    </p>
+
+                </div>
+
+            </div>    
+
+            <div class="caption">
+
+                <a href="#" class="train-button">CR400AF</a>
+                <p>тих, модерен, плавен</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="second-row">
+
+        <div class="train-card">
+        
+            <div class="image-overlay">
+
+                <img id="TGV-M" alt="TGV-M" src="../assets/images/TGV-M.png">
+
+                <div class="brief-overview">
+                    
+                    <p>
+                        Влакът TGV-M съчетава висока скорост, 
+                        модерен дизайн и устойчивост, предлагащ 
+                        комфортно пътуване между френски и европейски
+                        градове с акцент на енергийна ефективност.
+                    </p>
+                    
+                </div>
+
+            </div>    
+
+            <div class="caption">
+
+                <a href="#" class="train-button">TGV-M</a>
+                <p>иновативен, ефективен, екологичен</p>
+
+            </div>
+        </div>
+        
+        <div class="train-card">
+        
+            <div class="image-overlay">
+
+                <img id="talgo-avril" alt="Talgo Avril" src="../assets/images/TalgoAvril.jpg">
+
+                <div class="brief-overview">
+                    
+                    <p>
+                        Влакът Talgo Avril комбинира висока скорост, 
+                        енергийна ефективност и комфорт. С лек дизайн 
+                        и просторен интериор, той осигурява бързо и 
+                        приятно пътуване из Европа.
+                    </p>
+                    
+                </div>
+
+            </div>    
+
+            <div class="caption">
+
+                <a href="#" class="train-button">Talgo Avril</a>
+                <p>лек, просторен, енергийно ефективен</p>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

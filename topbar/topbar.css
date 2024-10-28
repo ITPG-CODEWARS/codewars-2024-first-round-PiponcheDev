@@ -157,6 +157,7 @@ body {
         left: 0; /* Align to the left */
         width: 300px; /* Full width */
         display: none; /* Hidden by default */
+        z-index: 10;
     }
     
     /*train dropdown properties*/
