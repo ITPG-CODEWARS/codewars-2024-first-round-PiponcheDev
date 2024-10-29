@@ -4,9 +4,9 @@ body {
 
 /*top-bar properties*/
 .top-bar {
+    height: 10vh;
     display: flex;
     align-items: center;
-    height: 10vh;
     background-color: #A7C4FF;
 }
 
@@ -16,40 +16,32 @@ body {
 }
 
 .branding img {
-    height: 12vh; /* Set a fixed height for the logo */
-    width: auto; /* Maintain aspect ratio */
+    height: 12vh; 
+    width: auto;
 }
 
-/*menu toggle properties*/
-.menu-button {
-    display: none; /* Hidden on larger screens */
-}
-
-.mobile-phone-branding {
-    display: none; /* Hidden on larger screens */
-}
 /*navigation bar properties*/
 .nav-bar {
+    margin-left: 10vw;
     display: flex;
     flex: 1;
     align-items: center;
-    margin-left: 10vw;
 }
 
 /*buttons*/
 .nav-button, .dropdown-button{
-    width: 100%;
-    height: 8vh;
-    line-height: 8vh;
     margin-right: 5px;
-    font-family: Unbounded;   
-    font-size: 1vw; 
-    text-align: center;
-    text-decoration: none;
-    background-color: #A7C4FF;
     border: none;
     border-radius: 40px;
+    width: 100%;
+    height: 8vh;
+    text-align: center;
+    text-decoration: none;
+    line-height: 8vh;
+    font-family: Unbounded;   
+    font-size: 1vw; 
     transition: background-color 0.4s ease-in-out;
+    background-color: #A7C4FF;
 }
 
 .nav-button:hover, .dropdown-button:hover{
@@ -58,26 +50,26 @@ body {
 
 /*train-dropdown and all its children properties*/
 .train-dropdown{
-    position: relative;
     margin-right: 5px;
-    width: 100%;
+    width: 100%;    
+    position: relative;
 }
 
 .train-elements{
     display: none;
+    border-radius: 0.8vw;
     width: 100%;
     position: absolute;
     top: 10vh;
     background-color: #7f9dfd;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    border-radius: 0.8vw;
     z-index: 50;
 }
 
 .train-elements a{
     padding: 1em;
-    color: black;
     text-decoration: none;
+    color: black;
 }
 
 .train-elements a:hover{
@@ -94,20 +86,31 @@ body {
     border-bottom-right-radius: 0.8vw;
 }
 
-#mobile-phone-train-button{
-    display: none;
-}
-
-.mobile-phone-nav-bar{
-    display: none;
-}
 /*Class that JS uses to show train-elements*/
 .show{
     display: flex;
     flex-direction: column;
 }
 
+/*menu toggle properties*/
+.menu-button {
+    display: none; /* Hidden on larger screens */
+}
+
+.mobile-phone-branding {
+    display: none; /* Hidden on larger screens */
+}
+
+#mobile-phone-train-button{
+    display: none; /* Hidden on larger screens */
+}
+
+.mobile-phone-nav-bar{
+    display: none; /* Hidden on larger screens */
+}
+
 @media only screen and (max-width: 1300px){
+    
     /*hiding nav-bar to save space and make it into a dropdown*/
     .nav-bar{
         display: none;
@@ -115,19 +118,20 @@ body {
 
     .menu-button{
         display: flex;
-        height: 8.5vh;
-        width: 8.5vh;
         justify-content: center;
         align-items: center;
         border-radius: 20px;
         border: none;
+        height: 8.5vh;
+        width: 8.5vh;
         background-color: #A7C4FF;
+        transition: 0.4s ease-in-out;
     }
 
     .menu-button img {
-        width: 3vw; /* Set a fixed width */
-        height: auto; /* Maintain aspect ratio */
-        max-width: none; /* Prevent scaling */
+        width: 30px;
+        max-width: none; 
+        height: auto; 
     }
 
     .menu-button:hover{
@@ -136,47 +140,47 @@ body {
 
     /*button properties*/
     .nav-button, .dropdown-button{
-        border-radius: 0;
-        background-color: #94b7ff;
-        position: relative;
-        height: 80px;
-        font-size: 1.2em;
         display: flex;
         align-items: center;
         justify-content: center;
+        border-radius: 0;
+        height: 80px;
+        position: relative;
+        font-size: 1.2em;
+        background-color: #94b7ff;
+        transition: 0.4s ease-in-out;
     }
 
-
-
     .mobile-phone-nav-bar{
-        box-shadow: 8px 16px 16px 0px rgba(0,0,0,0.2);
-        background-color: #A7C4FF;
+        display: none;
         width: 300px;
         position: absolute; /* Position below the top bar */
         top: 10vh; /* Position below the top bar */
         left: 0; /* Align to the left */
-        width: 300px; /* Full width */
-        display: none; /* Hidden by default */
+        box-shadow: 8px 16px 16px 0px rgba(0,0,0,0.2);
+        background-color: #A7C4FF;
         z-index: 10;
+        transition: 0.4s ease-in-out;
     }
     
     /*train dropdown properties*/
     .tablet-train-elements{
         display: none;
-        width: 100%;
         flex-direction: column;
+        width: 100%;
         position: absolute;
         left: 300px;
         top: 80px;
-        z-index: 1;
         background-color: #7f9dfd;
+        z-index: 1;
     }
     
     .tablet-train-elements a{
         padding: 12px 16px;
-        color: black;
         font-size: 1.2em;
         text-decoration: none;
+        color: black;
+        transition: 0.4s ease-in-out;
     }
 
     .tablet-train-elements a:hover{
@@ -217,12 +221,12 @@ body {
 
     /*logo and title of website*/
     .mobile-phone-branding{
-        border-bottom: solid 2px #97baff;
-        width: 100%;
-        height: 20vh;
         display: flex;
         align-items: center;
         justify-content: center;
+        border-bottom: solid 2px #97baff;
+        width: 100%;
+        height: 20vh;
         background-color: #A7C4FF;
     }
 
@@ -233,24 +237,28 @@ body {
 
     /*a menu button that makes the nav-bar appear*/
     .menu-toggle{
-        width: 100%;
         display: flex;
         justify-content: center;
-        background-color: #A7C4FF;
+        width: 100%;
         position: relative;
+        background-color: #A7C4FF;
+        transition: 0.4s ease-in-out;
 
     }
+
     .menu-button{
-        width: 70%;
-        height: 70px;
         border: none;
         border-radius: 20px;
+        width: 70%;
+        height: 70px;
         background-color: #A7C4FF;
+        transition: 0.4s ease-in-out;
     }
 
     .menu-button img {
         width: 50px;
     }
+
     .menu-button:hover{
         background-color: #8FA9FF;
     }
@@ -259,13 +267,14 @@ body {
     .nav-button{
         border-radius: 0;
         background-color: #94b7ff;
+        transition: 0.4s ease-in-out;
     }
 
     .mobile-phone-nav-bar{
-        box-shadow: 8px 16px 16px 0px rgba(0,0,0,0.2);
-        background-color: #A7C4FF;
         width: 100%;
         top: 70px;
+        box-shadow: 8px 16px 16px 0px rgba(0,0,0,0.2);
+        background-color: #A7C4FF;
     }
 
     /*hiding the dropdown button we used in desktop

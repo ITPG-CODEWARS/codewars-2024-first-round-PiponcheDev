@@ -14,6 +14,7 @@
 body {
     margin: 0;
     background-color: #FFD1BA;
+    overflow-x: hidden;
 }
 
 .section-container{
@@ -58,6 +59,8 @@ body {
 .pic-name > img{
     width: 6vw;
     margin: 1vw;
+    opacity: 0.87;
+    border-radius: 50px;
 }
 
 .pic-name > h2{
@@ -91,6 +94,7 @@ body {
     justify-content: center;
     padding: 1.5vh;
     border-radius: 1vw;
+    transition: 0.4s ease-in-out;
 }
 
 .copy-button img{
@@ -119,6 +123,7 @@ body {
     justify-content: center;
     padding: 1em;
     border-radius: 1.5vw;
+    box-shadow: 10px 1vh 1vh rgba(49, 46, 46, 0.376);
 }
 
 .icon{
@@ -178,7 +183,7 @@ body {
 @media only screen and (max-width: 450px){
     .contact-card{
         height: 40vh;
-        width: 55vw;
+        width: 70vw;
         
     }
 }
@@ -186,6 +191,6 @@ body {
     .phone > h2,
     .gmail > h2,
     .github > h2{
-        font-size: 0.3em;
+        font-size: 1em;
     }
 }

@@ -14,6 +14,7 @@
 body {
     margin: 0;
     background-color: #FFD1BA;
+    overflow-x: hidden;
 }
 
 .train-images-container{
@@ -158,5 +159,10 @@ body {
         max-width: none;
         width: 70vw;
         margin: 0px 20px 10px;
+    }
+}
+@media only screen and (max-width: 320px){
+    .brief-overview{
+        font-size: 0.8em;
     }
 }

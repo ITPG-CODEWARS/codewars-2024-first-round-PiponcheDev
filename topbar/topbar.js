@@ -40,18 +40,3 @@ window.addEventListener("click", function (event) {
     console.log("Closed mobile nav menu.");
   }
 });
-
-function Phone(){
-  navigator.clipboard.writeText("+359884205721");
-  alert("You succesfully copied my phone");
-}
-
-function Gmail(){
-  navigator.clipboard.writeText("gabrieltrainlover365@gmail.com");
-  alert("You succesfully copied my email");
-}
-
-function Github(){
-  navigator.clipboard.writeText("https://github/PiponcheDev");
-  alert("You succesfully copied my github account url");
-}

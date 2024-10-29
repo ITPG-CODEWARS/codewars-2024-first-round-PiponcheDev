@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="bg">
+
 <head>
+
+    <!--meta-data-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -18,15 +21,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
 
 </head>
+
 <script src="../topbar/topbar.js" defer></script>
+
+<script>
+function Phone(){
+  navigator.clipboard.writeText("+359884205721");
+  alert("You succesfully copied my phone");
+}
+
+function Gmail(){
+  navigator.clipboard.writeText("gabrieltrainlover365@gmail.com");
+  alert("You succesfully copied my email");
+}
+
+function Github(){
+  navigator.clipboard.writeText("https://github/PiponcheDev");
+  alert("You succesfully copied my github account url");
+}
+</script>
+
 <body>    
-    <!--the top bar-->
+
+<!--the top bar-->
 <div class="top-bar">
+
     <div class="mobile-phone-branding">
 
         <a href="index.html"><img id="logo" src="../assets/images/logo.png" alt="Лого на влак"></a>
 
     </div>
+    
     <div class="menu-toggle">
 
         <button class="menu-button" onclick="Menu()"><img src="../assets/images/menu.png"></button>
@@ -58,6 +83,7 @@
             </div> 
             
             <a class="nav-button" href="contacts.html">Контакти</a>
+
             <a class="nav-button" href="about-me.html">Повече за мен</a>
         
         </div>
@@ -95,35 +121,49 @@
         </div> 
         
         <a class="nav-button" href="contacts.html">Контакти</a>
+
         <a class="nav-button" href="about-me.html">Повече за мен</a>
     
     </div>
 
 </div>
 
+<!--section container-->
 <div class="section-container">
+
     <div class="contact-card">
+
         <div class="pic-name">
+
             <img src="../assets/images/contacts.jpg">
             <h2>Габриел Ангелов Неделчев</h2>
+
         </div>
 
         <div class="info">
 
             <div class="phone">
+
                 <img src="../assets/images/phone.png">
                 <h2>+359 88 420 5721</h2>
                 <button class="copy-button" onclick="Phone()"><img src="../assets/images/copy.png"></button>
+            
             </div>
+
             <div class="gmail">
+
                 <img src="../assets/images/gmail.png">
                 <h2>gabrieltrainlover365@gmail.com</h2>
                 <button class="copy-button" onclick="Gmail()"><img src="../assets/images/copy.png"></button>
+            
             </div>
+
             <div class="github">
+
                 <img src="../assets/images/github.png">
                 <h2>https://github.com/PiponcheDev</h2>
                 <button class="copy-button" onclick="Github()"><img src="../assets/images/copy.png"></button>
+            
             </div>
             
         </div>
@@ -131,19 +171,27 @@
     </div>
 
     <div class="social-media">
+
         <div class="instagram">
+
             <img class="icon" src="../assets/images/instagram.png">
             <h2>Instagram</h2>
             <img class="profile" src="../assets/images/instagram-profile.png">
+        
         </div>
+        
         <div class="discord">
+
             <img class="icon" src="../assets/images/discord.png">
             <h2>Discord</h2>
             <img class="profile" src="../assets/images/discord-profile.png">
+        
         </div>
+    
     </div>
 
 </div>
 
 </body>
+
 </html>

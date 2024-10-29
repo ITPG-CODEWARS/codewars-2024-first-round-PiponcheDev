@@ -14,6 +14,7 @@
 body {
     margin: 0;
     background-color: #FFD1BA;
+    overflow-x: hidden;
 }
 
 .section-container{
@@ -103,6 +104,7 @@ body {
     font-size: 20px;
     font-weight: bold;
     border-radius: 40px;
+    transition: 0.4s ease-in-out;
 }
 
 .caption .train-button:hover{
@@ -183,5 +185,14 @@ body {
 @media only screen and (max-width: 700px){
     .section-container{
         margin-top: 70px;
+    }
+    .brief-overview{
+        font-size: 0.7em;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .brief-overview{
+        font-size: 0.5em;
     }
 }
