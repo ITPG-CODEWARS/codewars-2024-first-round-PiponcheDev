@@ -32,14 +32,14 @@ body {
     flex-direction: row;
     width: 100vw;
     justify-content: space-around;
-    gap: 2vh; /* Small gap between train cards for responsiveness */
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 2vh; 
+    flex-wrap: wrap; 
 }
 
 .train-card {
-    flex: 1 1 100%; /* Allows two cards per row on medium screens, adjusts on smaller screens */
-    max-width: 30vw; /* Limits maximum size */
-    min-width: 150px; /* Sets minimum size for smaller screens */
+    flex: 1 1 100%; 
+    max-width: 30vw; 
+    min-width: 150px; 
     border-radius: 1rem;
     background-color: #fde0d0;
     box-shadow: 10px 1vh 1vh rgba(49, 46, 46, 0.376);
@@ -47,14 +47,14 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    overflow: hidden; /* Prevents overflow of content */
-    padding: 1em; /* Adds internal spacing */
+    overflow: hidden; 
+    padding: 1em; 
 }
 
 .train-card > img {
     width: 100%;
     height: 40%;
-    object-fit: contain; /* Ensures image scales without overflow */
+    object-fit: contain; 
     padding: 0.5em 0;
 }
 
@@ -88,7 +88,7 @@ body {
 
 .image-overlay img {
     display: block;
-    width: 100%; /* Ensures the image fills the div */
+    width: 100%;
 }
 
 .image-overlay:after {
@@ -98,7 +98,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(255, 190, 136, 0.2); /* Adjust the color and opacity */
+    background-color: rgba(255, 190, 136, 0.2);
     z-index: 1;
 }
 
